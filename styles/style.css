@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header_container {
+    display: inline-flex;
+}
+
+.navb {
+    display: flex;
+    padding: 12px 28px 708px 28px;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    background-color: #E7EEFF;
+    height: 100%;
+}
+
+.header_container>div div img {
+    cursor: cell;
+    transition: 0.6s;
+}
+
+.header_container>div div img:hover {
+    scale: 2;
+    border: 1px solid #9100D3;
+    padding: 4px;
+    border-radius: 9999px;
+    background-color: #d3e1ff;
+}
+
+.mainLogo {
+    border-bottom: 1px solid #002B81
+}
+
+.mom {
+    display: flex;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.searchbox_wrap {
+    display: flex;
+    padding: 20px 0px;
+    background: #E7EEFF;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchbox {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.searchbox>input {
+    font-family: Inter;
+    font-size: 16px;
+    all: unset;
+    width: 290px;
+}
+
+.profile_wrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.profile_wrap>span {
+    color: #5E6577;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.options {
+    display: flex;
+}
+
+.maincontent {
+    padding: 42px 96px 32px 96px;
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+
+.cards {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    justify-content: end;
+}
+
+.card {
+    display: flex;
+    padding: 8px 24px 8px 12px;
+    align-items: center;
+    border-radius: 16px;
+    background: #E7EEFF;
+    gap: 12px;
+}
+
+.card>span {
+    color: #323232;
+    font-family: Inter;
+    font-size: 16px;
+}
+
+.housecards {
+    display: inline-flex;
+    flex-direction: column;
+    border-radius: 24px 24px;
+    background-color: #E7EEFF;
+}
+
+.housecards>span {
+    display: block;
+}
+
+.housecard_description {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 8px 12px;
+}
+
+.title {
+    font-family: Inter;
+    font-size: 18px;
+}
+
+.description {
+    color: #606060;
+    font-family: Inter;
+    font-size: 14px;
+}
+
+.section {
+    display: flex;
+    justify-content: end;
+    gap: 42px;
+}
