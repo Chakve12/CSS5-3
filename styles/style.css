@@ -6,6 +6,7 @@
 
 .header_container {
     display: inline-flex;
+    align-items: stretch;
 }
 
 .navb {
@@ -15,7 +16,6 @@
     gap: 24px;
     align-items: center;
     background-color: #E7EEFF;
-    height: 100vw;
 }
 
 .header_container>div div img {
@@ -101,8 +101,6 @@
 
 .inside_content {
     display: flex;
-    max-width: 1144px;
-    width: 100%;
     flex-direction: column;
     gap: 42px;
 }
@@ -131,7 +129,7 @@
 }
 
 .housecards {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     border-radius: 24px 24px;
     background-color: #E7EEFF;
@@ -161,7 +159,6 @@
 
 .section {
     display: flex;
-    justify-content: space-between;
+    gap: 42px;
     flex-wrap: wrap;
-    align-content: space-between;
 }
