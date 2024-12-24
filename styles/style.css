@@ -15,7 +15,7 @@
     gap: 24px;
     align-items: center;
     background-color: #E7EEFF;
-    height: 100%;
+    height: 100vw;
 }
 
 .header_container>div div img {
@@ -41,6 +41,9 @@
 
 .main {
     flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .searchbox_wrap {
@@ -49,25 +52,31 @@
     background: #E7EEFF;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .searchbox {
     display: flex;
     align-items: center;
     gap: 12px;
+    flex-wrap: wrap;
 }
 
 .searchbox>input {
-    font-family: Inter;
-    font-size: 16px;
     all: unset;
     width: 290px;
+}
+
+.searchbox > input::placeholder {
+    font-family: Inter;
+    font-size: 16px;
 }
 
 .profile_wrap {
     display: flex;
     align-items: center;
     gap: 12px;
+    flex-wrap: wrap;
 }
 
 .profile_wrap>span {
@@ -79,11 +88,21 @@
 
 .options {
     display: flex;
+    align-self: flex-end;
 }
 
 .maincontent {
-    padding: 42px 96px 32px 96px;
+    padding: 42px 0px 32px 0px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.inside_content {
+    display: flex;
+    max-width: 1144px;
+    width: 100%;
     flex-direction: column;
     gap: 42px;
 }
@@ -93,6 +112,7 @@
     gap: 30px;
     width: 100%;
     justify-content: end;
+    flex-wrap: wrap
 }
 
 .card {
@@ -141,6 +161,7 @@
 
 .section {
     display: flex;
-    justify-content: end;
-    gap: 42px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
 }
